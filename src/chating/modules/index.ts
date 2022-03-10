@@ -5,4 +5,4 @@ import { ChatingGateWay } from 'src/chating/gateways';
   imports: [],
   providers: [ChatingGateWay],
 })
-export class ChatModule {}
+export class ChatingModule {}

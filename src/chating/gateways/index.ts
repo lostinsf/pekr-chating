@@ -56,13 +56,13 @@ export class ChatingGateWay
 
   // 각종 소켓 기능
   afterInit(server: any) {
-    throw new Error('Method not implemented.');
+    console.log('Method Init');
   }
   handleDisconnect(client: any) {
-    throw new Error('Method not implemented.');
+    console.log('Method Disconnect');
   }
   handleConnection(client: any, ...args: any[]) {
-    throw new Error('Method not implemented.');
+    console.log('Method Connection');
   }
 
   // 이벤트 메세지 정리
@@ -122,11 +122,9 @@ export class ChatingGateWay
   ): Promise<void> {
     const { message, nickName, roomId } = data;
 
-    client
-      .to(roomId)
-      .emit(ChatingConfigSocketPubTypes.NEW_MESSAGE, {
-        nickName,
-        message,
-      } as SentMessage);
+    client.to(roomId).emit(ChatingConfigSocketPubTypes.NEW_MESSAGE, {
+      nickName,
+      message,
+    } as SentMessage);
   }
 }
