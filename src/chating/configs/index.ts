@@ -1,4 +1,2 @@
-export {
-  ChatingConfigSocketSubTypes,
-  ChatingConfigSocketPubTypes,
-} from './chating_config_socket';
+export { apiKeys } from './keys_api';
+export { SocketTypesSub, SocketTypesPub } from './types_socket';
