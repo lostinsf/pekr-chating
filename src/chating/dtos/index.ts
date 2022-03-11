@@ -1,2 +1,2 @@
-export { JoinRoomRequest, LeaveRoomRequest } from './chating_dto_room';
-export { SendMessageRequest, SentMessage } from './chating_dto_message';
+export { JoinRoomRequest, LeaveRoomRequest } from './objs_room';
+export { SendMessageRequest, SentMessage } from './objs_message';
